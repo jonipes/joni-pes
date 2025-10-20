@@ -14,15 +14,15 @@ export default function App(){
             <img src="/assets/joni-pes-logo.png" alt="logo" className="w-9 h-9 object-contain" />
           </div>
           <div>
-            <div className="text-sm opacity-80">JONI</div>
-            <div className="text-xl font-bold">PES Store</div>
+            <div className="text-sm opacity-80">SITE</div>
+            <div className="text-xl font-bold">JONI PES</div>
           </div>
         </div>
       </header>
       <main className="px-4 pb-24 flex-1">
         <section className="w-full rounded-xl p-6 bg-gradient-to-r from-white/5 to-white/3 mb-8 shadow-lg">
           <h1 className="text-3xl font-extrabold">Temukan Game Favoritmu</h1>
-          <p className="mt-2 text-sm opacity-80">Store game vibe — cepat, aman, support HP & PC</p>
+          <p className="mt-2 text-sm opacity-80">Site game vibe — cepat, aman, support All Android & Store Account</p>
         </section>
         <section>
           <h2 className="text-2xl font-bold mb-4">Populer Game</h2>
