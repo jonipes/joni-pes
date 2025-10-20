@@ -7,8 +7,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const games = [
-  {id:0,title:'eFootball Mobile', publisher:'Konami', img:'/assets/efootball.jpg'},
-  {id:1,title:'PUBG Mobile', publisher:'Tencent Games', img:'/assets/pubg.jpg'},
+  {id:0,title:'eFootball Mobile', publisher:'Konami', img:'/assets/efootball.png'},
+  {id:1,title:'PUBG Mobile', publisher:'Tencent Games', img:'/assets/pubg.png'},
   {id:2,title:'Mobile Legends', publisher:'Moonton', img:'/assets/ml.jpg'},
   {id:3,title:'Valorant', publisher:'Riot Games', img:'/assets/valorant.jpg'},
   {id:4,title:'Honor of Kings', publisher:'TiMi Studio', img:'/assets/hok.jpg'},
