@@ -1,5 +1,5 @@
 import React from 'react';
-import logoSrc from '../assets/joni-pes-logo.png';
+import logoSrc from '../assets/joni-pes-logo.jpg';
 export default function Tentang(){
   return (
     <div className="max-w-md mx-auto px-4 pt-20 pb-24 text-center">
