@@ -1,3 +1,24 @@
+#!/bin/bash
+# ===================================================
+#  JONI PES v2.0 - Auto Update Script (Glow Edition)
+# ===================================================
+
+echo "🔄 Menghapus versi lama..."
+rm -rf src
+mkdir src
+
+echo "📁 Menulis struktur project baru..."
+cat > src/main.jsx <<'EOF'
+import React from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './App'
+import './index.css'
+createRoot(document.getElementById('root')).render(
+  <React.StrictMode><App /></React.StrictMode>
+)
+EOF
+
+cat > src/App.jsx <<'EOF'
 import React from 'react'
 const games = [
   { id: 'efootball', title: 'eFootball Mobile', studio: 'Konami', img: '/assets/efootball.png' },
@@ -46,3 +67,49 @@ function GameCard({game}){
     </div>
   )
 }
+EOF
+
+cat > src/index.css <<'EOF'
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body { @apply bg-gradient-to-b from-[#3b0b4f] to-[#5b1f6a] text-white font-sans; }
+EOF
+
+cat > tailwind.config.cjs <<'EOF'
+module.exports = {
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  theme: { extend: {} },
+  plugins: [],
+}
+EOF
+
+cat > postcss.config.cjs <<'EOF'
+module.exports = { plugins: { tailwindcss: {}, autoprefixer: {}, }, }
+EOF
+
+cat > index.html <<'EOF'
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JONI PES Store</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+EOF
+
+echo "🧱 Membuild ulang project..."
+npm run build
+
+echo "🚀 Mengupload ke GitHub..."
+git add .
+git commit -m "update: ganti ke JONI PES v2.0 glow edition"
+git push origin main
+
+echo "✅ Selesai! Vercel akan auto-deploy versi baru."
+EOF

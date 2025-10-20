@@ -1,24 +1,4 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root{
-  --accent: #9b6cff;
-  --accent-2: #6f3bd8;
-}
-
-html,body,#root{height:100%;}
-body{
-  @apply bg-gradient-to-b from-jp-purple to-jp-purple-2 text-white font-sans;
-}
-
-/* small helpers for glow */
-.glow {
-  box-shadow: 0 6px 28px rgba(155,108,255,0.28);
-}
-
-/* card image mask */
-.game-card img{ border-radius: 12px 12px 0 0; }
-
-/* bottom nav style mimic */
-.bottom-nav{ backdrop-filter: blur(6px); }
+body { @apply bg-gradient-to-b from-[#3b0b4f] to-[#5b1f6a] text-white font-sans; }
