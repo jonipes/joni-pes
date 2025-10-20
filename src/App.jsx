@@ -1,6 +1,6 @@
 import React from 'react'
 const games = [
-  { id: 'efootball', title: 'eFootball Mobile', studio: 'Konami', img: '/assets/efootball.png', link: '/efootball' },
+  { id: 'efootball', title: 'eFootball Mobile', studio: 'Konami', img: '/assets/efootball.png', link: '/efootball/index.html' },
   { id: 'pubg', title: 'PUBG Mobile', studio: 'Tencent', img: '/assets/pubg.png' },
   { id: 'mlbb', title: 'Mobile Legends', studio: 'Moonton', img: '/assets/mlbb.png' },
   { id: 'ff', title: 'Free Fire', studio: 'Garena', img: '/assets/ff.png' }
