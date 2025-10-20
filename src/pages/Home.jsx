@@ -46,9 +46,9 @@ export default function Home(){
         <div className="mt-4 flex items-center justify-between">
           <div className="flex items-end gap-4">
             <h3 className="text-lg font-semibold text-white">Populer Game</h3>
-            <span className="text-sm text-white/40">Voucher</span>
+            <span className="text-sm text-white/40">Account Stock</span>
           </div>
-          <div className="h-[2px] w-20 bg-white/20 rounded" />
+          <div className="h-[4px] w-20 bg-white/20 rounded" />
         </div>
 
         <div className="mt-4 grid grid-cols-3 gap-3 pb-12">
