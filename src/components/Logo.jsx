@@ -1,5 +1,5 @@
 import React from 'react';
-import logoSrc from '../assets/joni-pes-logo.jpg';
+import logoSrc from '../assets/joni-pes-logo.png';
 export default function Logo({ size = 36 }){
   return (
     <div className="flex items-center gap-2">
